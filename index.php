@@ -72,7 +72,7 @@
     </section>
     
     <div id="yoyaku" class="yoyaku">
-        <a href="index.php">ご予約はこちら</a>
+        <a href="yoyaku.php">ご予約はこちら</a>
     </div>
     
     <footer>
