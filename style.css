@@ -1,0 +1,272 @@
+@charset "utf-8";
+/*基本設定*/
+img{
+    width:89%;
+    height:auto;
+}
+*{
+    margin:0;
+}
+ul{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+body{
+    display: grid;
+    grid-template-columns: 20px 150px 1fr 20px;
+    grid-template-rows:
+                [head] 100px
+                [image] auto
+                [yoyaku] auto
+                [kiji] auto
+                [foot] 100px;
+    row-gap: 20px;
+    font-family: sans-serif;
+    background-color: aliceblue;
+}
+body > * {
+    grid-column: 2 / -2;
+}
+
+header{
+    grid-row: head;
+    grid-column: 1 / -1;
+    background-color: #F9F9F9;
+    width: 100%;
+    border-top: solid 3px #364e96;/*上線*/
+    border-bottom: solid 3px #364e96;/*下線*/
+}
+
+header a {
+    display: block;
+    text-align: center;
+    padding-top: 21px;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: serif;
+    text-shadow: 4px 1px 4px grey;
+}
+
+.menu-btn{
+    grid-row: head;
+    align-self: center;
+    grid-column: 1;
+    padding-left:8px;
+    font-size: 1.4em;
+    cursor: pointer;
+}
+nav{
+    grid-column:1 / 3;
+    grid-row: head/ span 5;
+    background-color:#fff;
+    z-index:6;
+    display: none;
+    
+}
+
+.closebtn{
+    position: fixed;
+    color:black;
+    cursor: pointer;
+    font-size:0.7em;
+}
+nav ul{
+    line-height: 60px;
+    padding-right: 14px;
+    padding-left: 13px;
+    text-align: center;
+}
+.list{
+    display: inline-block;
+    margin-bottom: 20px;
+    padding-top:15px;
+    
+}
+nav a{
+    color:black;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+
+}
+nav a:hover{
+    color:#ef9504;
+}
+
+.slide-image{
+    grid-row: image;
+    grid-column: 2/ -2;
+}
+ul {
+    padding-right: 40px;
+}
+.change-slide-btn{
+
+    display: block;
+    align-self: center;
+    justify-self: center;
+
+}
+.change-btn{
+    padding-top: 100px;
+    font-size:2em;
+    color: black;
+    
+}
+.change-btn:hover{
+    cursor: pointer;
+}
+.prev-btn{
+    float: left;
+    /*初期設定では非表示*/
+    display:none;
+
+}
+.next-btn{
+    float:right
+}
+.slide{
+  display: none;
+  padding-left: 33px;
+}
+.slide img{
+    border-radius: 7px;
+}
+.active{
+    display:block;
+    padding-top: 23px;
+}
+
+.slide-title{
+    text-align: center;
+    color:black;
+    text-shadow:4px 7px 5px gray;
+    border-bottom: 1px solid gray;
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+}
+
+section{
+    grid-row: kiji;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 20px 33px;
+    align-self: center;
+    justify-self: center;
+
+}
+section h2{
+    color:black;
+    text-shadow:4px 7px 5px gray;
+    font-size:15px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+section a{
+    color:#fff;
+    text-decoration: none;
+}
+section img{
+    height: 157px;
+    width: 155px;
+    border-radius: 8px;
+}
+
+.yoyaku {
+    padding:40px; 
+    grid-row: yoyaku;
+    align-self: center;
+    justify-self: center;
+    border-radius: 4px;
+    margin-bottom: 5px;
+
+}
+.yoyaku a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border-bottom: solid 1px;
+    font-size: 20px;
+}
+.yoyaku a:hover {
+    cursor: pointer;
+}
+
+footer{
+    grid-row: foot;
+    background-color: #F9F9F9;
+    color: black;
+    grid-column: 1 / -1;
+    border-top: solid 3px #364e96;
+    border-bottom: solid 3px #364e96;
+}
+footer p{
+    padding-top: 25px;
+    text-align: center;
+}
+.sns{
+    float: right;
+    font-size: 1.5em;
+    margin-right: 34px;
+    margin-top: -15px;
+}
+.sns:hover{
+    text-shadow: 1px 0 2px #444444;
+    color:#ffffff;
+}
+
+p {
+
+    text-align: center;
+}
+
+.insta {
+    color: #fff;
+    padding-bottom: 10px;
+    font-size: 35px;
+    text-align: center;
+    float: right;
+    padding-right: 156px;
+    padding-bottom: 19px;
+}
+
+/*PC版レイアウト*/
+@media (min-width:650px){
+
+
+body{
+    grid-template-columns:
+                0.2fr repeat(6,1fr) 0.2fr;
+    column-gap: 5%;
+    grid-template-rows:
+        [head] 100px
+        [image kiji] auto
+        [yoyaku] auto
+        [foot] 100px;
+}
+.nav ul{
+    line-height: 70px;
+}
+.slide-image{
+    grid-column: 2/ 5;
+    margin-top: 50px;
+}
+.change-btn {
+    padding-top: 148px;
+    font-size: 2em;
+    color: #fff;
+}
+section {
+    grid-row: kiji;
+    grid-column: 5/ span 2;
+    padding-left: 123px;
+    padding-top: 78px;
+    column-gap: 50px;
+}
+.menu-btn{
+    font-size:28px;
+}
+}

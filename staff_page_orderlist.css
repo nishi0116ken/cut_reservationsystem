@@ -1,0 +1,129 @@
+@charset "utf-8";
+/*基本設定*/
+img{
+    width:100%;
+    height:auto;
+}
+*{
+    margin:0;
+}
+ul{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+body{
+    display: grid;
+    grid-template-columns: 20px 150px 1fr 20px;
+    grid-template-rows:
+                [head] 100px
+                [tuika] auto
+                [foot] 100px;
+    row-gap: 10px;
+    font-family: sans-serif;
+    background-color: aliceblue;
+}
+body > * {
+    grid-column: 2 / -2;
+}
+header{
+    grid-row: head;
+    grid-column: 1 / -1;
+    background-color: #F9F9F9;
+    width: 100%;
+    border-top: solid 3px #364e96;/*上線*/
+    border-bottom: solid 3px #364e96;/*下線*/
+}
+
+header a {
+    display: block;
+    text-align: center;
+    padding-top: 21px;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: serif;
+    text-shadow: 4px 1px 4px grey;
+}
+
+
+.list{
+    display: inline-block;
+    margin-bottom: 20px;
+    padding-top:15px;
+    
+}
+
+.add{
+    padding:5px 10px ;
+    margin: 8px 45px;
+    
+}
+.add p{
+    font-size: 20px;
+}
+input {
+    border-radius: 5px;
+    margin: 10px 15px;
+}
+/*追加確認確認ページ*/
+
+h2{
+    color:lightgray;
+    text-shadow: 2px 1px 1px black;
+    font-family: 'Homemade Apple', cursive;
+    border-bottom: 1px solid gray;
+    margin: 30px 0 10px 0;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+footer{
+    grid-row: foot;
+    background-color: #F9F9F9;
+    grid-column: 1 / -1;
+    color: black;
+    border-top: solid 3px #364e96;
+    border-bottom: solid 3px #364e96;
+}
+footer p{
+    padding-top: 25px;
+    text-align: center;
+
+}
+/*staff_top*/
+.tuika {
+    grid-row: tuika;
+}
+
+.tuika a{
+    display: block;
+    text-align: center;
+    justify-self: center;
+    margin-top: 75px;
+    font-size: 25px;
+}
+
+/*staff_add*/
+.add {
+    align-self: center;
+    justify-self: center;
+}
+
+/*staff_delete*/
+input[type="submit"] {
+    font-size: 18px;
+}
+input[type="button"] {
+    font-size: 18px;
+}
+input[type="radio"] {
+    margin: 20px;
+}
+/*order_list*/
+.order{
+    grid-row: list;
+}
