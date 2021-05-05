@@ -42,7 +42,7 @@
         </div>
         <div class="second">
             <img src="img/navy_bule.jpg" alt="モデル写真">
-            <p><p>DMでは話ずらい方、緊張する方もいるかもしれません。そんな方はこちらからご相談させて頂きます！↓</p></p>
+            <p><p>DMでは話ずらい方、緊張する方もいるかもしれません。そんな方はこちらからでもご相談させて頂きます！↓</p></p>
         </div>
         <div class="tree">
             <img src="img/dark_pink.jpg" alt="モデル写真">
