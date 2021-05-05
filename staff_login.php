@@ -9,7 +9,7 @@
     <script src="https://kit.fontawesome.com/98d5fb3ff2.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header><a href="index.php">Nakamura　Beauty</a></header>
+    <header><a href="index.php">Nakamura Beauty</a></header>
 
     <div id="menu-btn" class="menu-btn">
         <i id ="menu-button" class="fas fa-bars"></i>
