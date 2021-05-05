@@ -80,7 +80,7 @@
             ?>
         </div>
         <div class="sub">
-            <a class="top" href="index.html">・トップページ</a>
+            <a class="top" href="index.php">・トップページ</a>
             <a class="kaku" href="y_kakunin.php">・予約の確認</a>
         </div>
         <div class="sec">

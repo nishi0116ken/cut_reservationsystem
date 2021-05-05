@@ -9,25 +9,21 @@ if(isset($_SESSION['login']) == false){
     exit();
 }else{
     echo '<p class="tuika" style="text-align:end">'. $_SESSION['staff_name'].'ログイン中</p>';
-
 }
 ?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="utf-8">
-    <title>スタッフ管理</title>
     <link href="staff_page.css" rel="stylesheet">
+    <title>メニュー管理</title>
     <meta name="viewport" content="width = device-width">
 </head>
 <body>
-    <header><a href="#">Nakamura　Beauty</a></header>
-   <div class="tuika">
-       <h1>管理画面</h1>
-       <a href="staff_list.php">スタッフ管理画面</a><br>
-       <a href="order_list.php">予約管理画面</a><br>
-       <a href="menu_list.php">メニュー管理</a><br>
-       <a href="staff_logout.php">ログアウト</a>
+    <header><a href="#">Nakamura Beauty</a></header>
+    <div class="tuika ad">
+        <h3>メニューが選択されていません</h3>
+        <a href="menu_list.php">リストに戻る</a>
     </div>
     <footer>
         <div class="footer-title">

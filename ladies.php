@@ -42,14 +42,10 @@
         </div>
         <div class="second">
             <img src="img/navy_bule.jpg" alt="モデル写真">
-            <p>
-                #hair#hairstyle#haircolor#FF<br>#followforfollowback#instahair#美容学生
-                #美容学生と繋がりたい
-            </p>
+            <p><p>DMでは話ずらい方、緊張する方もいるかもしれません。そんな方はこちらからご相談させて頂きます！↓</p></p>
         </div>
         <div class="tree">
             <img src="img/dark_pink.jpg" alt="モデル写真">
-            <p>DMでは話ずらい方、緊張する方もいるかもしれません。そんな方はこちらからご相談させて頂きます！↓</p>
         </div>
     </div>
     <div class="yoyaku">

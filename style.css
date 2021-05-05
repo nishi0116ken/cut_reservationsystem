@@ -1,7 +1,7 @@
 @charset "utf-8";
 /*基本設定*/
 img{
-    width:89%;
+    width:80%;
     height:auto;
 }
 *{
@@ -130,7 +130,7 @@ ul {
 }
 .slide{
   display: none;
-  padding-left: 33px;
+  padding-left: 45px;
 }
 .slide img{
     border-radius: 7px;
@@ -170,8 +170,8 @@ section a{
     text-decoration: none;
 }
 section img{
-    height: 157px;
-    width: 155px;
+    height: 133px;
+    width: 131px;
     border-radius: 8px;
 }
 

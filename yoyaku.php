@@ -33,10 +33,22 @@
         </ul>
     </nav>
     <div class="menu">
-        <h2>Menu</h2>
-        <div class="img">
-            <img src="img/menu.jpg" alt="メニュ写真">
-        </div>
+      <h2>モデル様へのお願い</h2>
+      <br/>
+      <h3>料金・材料費について</h3>
+      <p>※申し訳ありませんが学生の為、<br/>材料費だけ頂いております。</p>
+      <p>ブリーチ一回を選択されたモデル様が、<br/>万が一希望するカラーや、その時状況に応じてもう一度ブリーチが必要な場合は、<br/>プラス料金は頂きません。</p>
+      <br/>
+      <h3>施術場所に関する説明</h3>
+      <p>施術場所に関しては、<br/>誠に申し訳ございませんが、現状確実に<br/>確保できる場所が無い為、<br/><span>下記の条件に沿う方のみ<span>の施術とさせて頂きます。</p>
+      <br/>
+      <div class="terms">
+        <p>・場所を貸してくれる方(家など)</p>
+        <p>・僕とカラーをしている友人宅</p>
+        <p>・渋谷にあるシェアサロン</p>
+      </div>
+      <br/>
+      <p style="font-size:15px; padding-bottom: 15px;">※渋谷での施術を希望される方に関しては追って場所や日時について連絡させて頂きます。</p>
     </div>
     <div class="form">
         <h2>ご予約</h2>
@@ -55,19 +67,38 @@
                     <label for="insta">インスタ(<span>必須</span>)</label><br />
                     <input type="text" name="insta" id="insta" placeholder="アカウント名" required>
                 </p>
+                <?php 
+                try{
+
+                    $dsn = 'mysql:dbname=heroku_faaf0db93aafd4a;host=us-cdbr-east-03.cleardb.com;charset=utf8';
+                    $user = 'b17734e198a8b6';
+                    $password = 'ac4d752e';
+                    $dbh = new PDO($dsn,$user,$password);
+                    $dbh-> setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
+                    $sql = 'SELECT name,price FROM menu WHERE 1';
+                    $stmt = $dbh->prepare($sql);
+                    $stmt->execute();
+                
+                    $dbh = null;
+                
+                    }catch (Exception $e){
+                        echo 'エラーが発生しました。もう一度やり直してください';
+                        exit();
+                    }
+                ?>
                 <p>
                     <label for="menyuu">メニュー(<span>必須</span>)</label><br />
                     <select name="syurui" id="menyuu" required>
-                        <option value="ヘアカット">ヘアカット</option>
-                        <option value="ヘアカラー">ヘアカラー</option>
-                        <option value="ヘアセット">ヘアセット</option>
-                        <option value="カット&カラー">カット&カラー</option>
-                        <option value="カット&カラー&セット">カット&カラー&セット</option>
+                    <?php
+                    foreach($stmt as $row){
+                        echo '<option value="'.$row['name'].$row['price'].'">'.$row['name']."/ ".$row['price'].'円</option>';
+                    }　
+                    ?>
                     </select>
                 </p>
                 <p>
-                    <label for="color">ご希望のヘアカラー(<span>必須</span>)</label><br />
-                    <input type="text" name="hair_color" id="color" placeholder="カラー" required>
+                    <label for="color">ご希望のヘアカラー</label><br />
+                    <input type="text" name="hair_color" id="color" placeholder="カラー" >
                 </p>
                 <p>
                     <label for="style">ご希望のヘアスタイル</label><br />
