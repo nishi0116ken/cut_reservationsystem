@@ -101,6 +101,7 @@ h2{
 .menu{
     grid-row: yoyakuop1;
     text-align: center;
+    border: 1px solid black;
 }
 
 .p{
