@@ -1,9 +1,11 @@
 # cut_reservationsystem
 # Nakamura Beauty
 こちらは利用モデル募集サイトです。<br>
-システムの目的：友人の困りごとを実際に解決しうるシステムを実装したかった。<br>
+システムの目的：友人の困りごとを実際に解決しうるシステムを実装した。<br>
+開発目的:プログラミングスキル向上と、サイト開発をしてみたかった
+
 レスポンシブ対応しているのでスマホからもご確認いただけます。<br>
-<img src="C:\Users\G020C1127\myapp\Screenshot_20210510-112937_Samsung Internet.jpg" width="800" height="800"><br><br>
+<img src="file:///C:/Users/G020C1127/Downloads/Screenshot_20210510-112937_Samsung%20Internet.jpg" width="800" height="800"><br><br>
 
 # URL
 [Nakamura Beauty](https://cut-beauty.herokuapp.com/yoyaku.php)<br>
