@@ -11,7 +11,7 @@
 [Nakamura Beauty](https://cut-beauty.herokuapp.com/yoyaku.php)<br>
 
 # 使用技術
-●HTML5 CSS<br>
+●HTML5 CSS3<br>
 ●Javascript<br>
 ●jQuery<br>
 ●PHP 7.2.3<br>
