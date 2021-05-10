@@ -4,7 +4,7 @@
 <h2>システムの目的：</h2>友人の困りごとを実際に解決しうるシステムを実装した。<br>
 <h2>開発目的:</h2>プログラミングスキル向上と、サイト開発をしてみたかった。<br>
 レスポンシブ対応しているのでスマホからもご確認いただけます。<br><br>
-<img src="https://github.com/nishi0116ken/cut_reservationsystem/issues/1#issue-883296403" width="800" height="800"><br><br>
+<img src="https://user-images.githubusercontent.com/77379169/117603446-11616500-b18e-11eb-8342-761080512386.jpg" width="800" height="800"><br><br>
 
 # URL
 [Nakamura Beauty](https://cut-beauty.herokuapp.com/yoyaku.php)<br>
